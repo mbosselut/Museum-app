@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Museum Guide</title>
+        <style>
+            .artObject {
+                max-width:800px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <section id="content">
+                <p>Manon's museum mobile app</p>
+                <h1>De Nachtwacht, Rembrandt, 1642</h1>
+                <img class="artObject" alt="Night watch" src="https://lh3.googleusercontent.com/J-mxAE7CPu-DXIOx4QKBtb0GC4ud37da1QK7CzbTIDswmvZHXhLm4Tv2-1H3iBXJWAW_bHm7dMl3j5wv_XiWAg55VOM=s0"/>
+                <section class="comment">
+                    <h3>Manon said :</h3>
+                    <p>"I know that one !"</p>
+                </section>
+            </section>
+            <form onsubmit="submitComment(); return false">
+                <div class="formSection">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="formSection">
+                        <label for="msg">Message:</label>
+                        <textarea id="msg"></textarea>
+                </div>
+                <div class=button>
+                    <button type="default">Post your comment</button>
+                </div>
+            </form>
+        </main>
+        <footer>Made with ❤ at Codaisseur</footer>
+    </body>
+</html>
