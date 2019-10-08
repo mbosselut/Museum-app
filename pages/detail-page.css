@@ -1,0 +1,47 @@
+body {
+    background: #FFBA00;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0;
+    width : 100%;
+}
+
+main {
+    background: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2rem 0;
+}
+
+#painting-title {
+    margin: 3rem 1rem 6rem 1rem;
+}
+
+#targetImg {
+    width:800px;
+    border-radius: 5%;
+    animation-name: targetImg-animation;
+    animation-duration: 2s;
+    transition-duration: 0.8s;
+    transition-property: transform;
+
+
+}
+
+#targetImg:hover {
+    transform: rotate(180deg);
+}
+
+#gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@keyframes targetImg-animation {
+    from {width: 0px;}
+    to {width: 800px;}
+}
