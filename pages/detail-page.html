@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Museum Guide</title>
     <link rel="stylesheet" type="text/css" media="screen" href="./detail-page.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <script src="detail-page.js"></script>
+</head>
 
-    </head>
+<body>
+    <main>
+        <section id="content">
+            <h1>Manon's museum mobile app</h1>
+            <hr>
+            <h2 id="painting-title">De Nachtwacht, Rembrandt, 1642</h2>
+            <img id="targetImg" alt="Night watch"
+                src="https://lh3.googleusercontent.com/J-mxAE7CPu-DXIOx4QKBtb0GC4ud37da1QK7CzbTIDswmvZHXhLm4Tv2-1H3iBXJWAW_bHm7dMl3j5wv_XiWAg55VOM=s0" />
 
-    <body>
-        <main>
-            <section id="content">
-                <h1>Manon's museum mobile app</h1>
-                <hr>
-                <h2 id="painting-title">De Nachtwacht, Rembrandt, 1642</h2>
-                <img id="targetImg" alt="Night watch" src="https://lh3.googleusercontent.com/J-mxAE7CPu-DXIOx4QKBtb0GC4ud37da1QK7CzbTIDswmvZHXhLm4Tv2-1H3iBXJWAW_bHm7dMl3j5wv_XiWAg55VOM=s0"/>
-                <section class="comment">
-                    <h3>Manon said :</h3>
-                    <p>"I know that one !"</p>
-                </section>
+        </section>
+        <section id='comments'>
+            <h2>Comments</h2>
+
+            <section class='comment'>
+                <h3>Arien said:</h3>
+                <p>"This is definitely one of my favorites!"</p>
             </section>
-            <form onsubmit="submitComment(); return false">
-                <div class="formSection">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name">
-                </div>
-                <div class="formSection">
-                        <label for="msg">Message:</label>
-                        <textarea id="msg"></textarea>
-                </div>
-                <div class=button>
-                    <button type="default">Post your comment</button>
-                </div>
-            </form>
-        </main>
-        <footer>Made with ❤ at Codaisseur</footer>
-    </body>
+        </section>
+
+        <form onsubmit="submitComment() return false">
+            <div class="formSection">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="formSection">
+                <label for="msg">Message:</label>
+                <textarea id="msg"></textarea>
+            </div>
+            <div class="button">
+                <button type="default">Post your comment</button>
+            </div>
+        </form>
+    </main>
+    <footer>Made with ❤ at Codaisseur</footer>
+</body>
+
 </html>
