@@ -20,7 +20,7 @@ main {
 }
 
 #targetImg {
-    width:800px;
+    width:300px;
     border-radius: 5%;
     animation-name: targetImg-animation;
     animation-duration: 2s;
@@ -29,10 +29,10 @@ main {
 
 
 }
-
+/* 
 #targetImg:hover {
     transform: rotate(180deg);
-}
+} */
 
 #gallery {
     display: flex;
@@ -40,8 +40,8 @@ main {
     justify-content: center;
     align-items: flex-start;
 }
-
+/* 
 @keyframes targetImg-animation {
     from {width: 0px;}
-    to {width: 800px;}
-}
+    to {width: 300px;}
+} */
