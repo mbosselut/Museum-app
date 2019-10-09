@@ -14,5 +14,10 @@ function submitComment() {
     comment.classList.add('comment');
     comment.appendChild(h3);
     comment.appendChild(p);
-    console.log(comment);
+    // Add new comment to page
+    const commentSection = document.getElementById('comments');
+    commentSection.appendChild(comment);
+
+    inputField.value = null;
+    textArea. value = null;
 }
